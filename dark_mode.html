@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dark Mode</title>
+	<link rel="stylesheet" type="text/css" href="dark_mode.css">
+</head>
+<body>
+ <div id="main">
+ 	<div id="inner">
+ 		<div id="nav">
+ 			<ul>
+ 				<li>Home</li>
+ 				<li>About</li>
+ 				<li>Contact</li>
+ 				<li>Services</li>
+ 				<li><img src="img/cre.png" title="dark mode" onclick="dark()" id="img"></li>
+ 			</ul>
+ 		</div>
+
+ 		<div style="padding: 20px;">
+ 			<h1>Dark Mode Using js</h1>
+ 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ 		</div>
+ 	</div>
+ </div>
+
+ 	<script type="text/javascript">
+ 	 		console.log(inner);
+
+ 		function dark()
+ 		{
+ 			let inner = document.querySelector('#inner');
+ 			let img = document.querySelector("#img");
+ 			inner.classList.toggle('active');
+ 			if (inner.classList.contains('active')) {
+ 				img.src = 'img/sun.png';
+ 			} else {
+ 				img.src = 'img/cre.png';
+ 			}
+ 			
+ 		}
+ 		
+
+
+ 	</script>
+</body>
+</html>
